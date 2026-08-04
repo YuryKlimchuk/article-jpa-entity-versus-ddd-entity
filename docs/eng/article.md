@@ -7,7 +7,7 @@ Most Java developers believe that a DDD Entity is simply a JPA Entity with a few
 When you first start learning Domain-Driven Design, one of the earliest traps you'll encounter is confusing a DDD Entity with a JPA Entity. Almost every tutorial uses the same class for both: it is simultaneously the domain model and the database representation. It looks convenient, but in reality, it's a serious mistake.
 
 The problem isn't obvious at first. As the project grows, however, the domain inevitably becomes polluted with infrastructure concerns, invariants become weaker, and refactoring turns into a nightmare. Let's take a closer look at why JPA Entities and DDD Entities are fundamentally different concepts—and why combining them into a single class is a bad idea.
-abyfkmysq
+
 ## What Is a JPA Entity, Really?
 
 A JPA Entity is a projection of a relational database table into an object in your application. It is purely a persistence model whose sole responsibility is to read and write data.
